@@ -1,0 +1,529 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Wet+Paint&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arima:wght@100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Arima:wght@100..700&family=Prata&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+
+
+/* Slider */
+
+.slider li {
+  font-family: "Arima", system-ui;
+}
+
+
+/* Navbar */
+
+.navbar .navbar-brand {
+ 
+  font-family: "Rubik Wet Paint", system-ui;
+}
+
+.navbar .nav-item .nav-link {
+  font-family: "Arima", system-ui;
+}
+
+.dropdown-menu .dropdown-item {
+  font-size: 20px;
+  font-family: "Arima", system-ui;
+}
+
+
+
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 40px;
+  font-weight: 1000;
+  font-family: "Prata", serif;
+  text-decoration: underline;
+  padding: 8px 12px;
+  position: absolute;
+  right: 62rem;
+  bottom: 2rem;
+  width: 50%;
+  text-align: left;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: transparent;
+  z-index: -1;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
+/* Responsiveness */
+
+
+/* Mobile screen */
+@media only screen and (max-width: 767px) {
+  body,html {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+  }
+
+  .navbar .navbar-brand {
+    font-size: 20px;
+  }
+
+  .slider {
+    height: 3rem;
+  }
+
+  .slider ul{
+    padding: 0;
+    list-style: none;
+    display: flex;
+    width: max-content;
+    animation: runSlider 30s linear infinite;
+}
+.slider img{
+    height: 20px;
+    margin-right: 2px;
+}
+.slider li{
+    background-color:transparent;
+    width: 600px;
+    letter-spacing: 1px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 150px;
+    padding: 10px 0 10px 10px;
+    margin-right: 5px;
+}
+
+.slider ul li div p {
+  position: relative;
+  bottom: 1.25rem;
+  left: 2rem;
+}
+.slider{
+    overflow: hidden;
+}
+@keyframes runSlider{
+    from{
+        transform: translateX(0);
+    }to{
+        transform: translateX(calc(-165px * 7));
+    }
+}
+  
+
+  .mySlides img {
+    position: relative;
+    left: -0.85rem;
+    width: 108%;
+    height: auto;
+  }
+
+  .text {
+    color: #f2f2f2;
+    font-size: 20px;
+    text-decoration: underline;
+    padding: 8px 12px;
+    position:absolute;
+    bottom: 1px;
+    left: 0.25rem;
+    width: 50%;
+    height: auto;
+    text-align: left;
+  }
+
+  .destination {
+    position: relative;
+    bottom: 2.5rem;
+  }
+
+  
+
+  .site img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+  }
+
+  .site img:nth-child(2) {
+    margin-top: 1rem;
+  }
+
+  .site #secondphoto {
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+  }
+
+  .site #thirdphoto {
+    margin-top: -0.25rem;
+    margin-bottom: 1rem;
+  }
+
+  .site #fourthphoto {
+    margin-top: -11rem;
+  }
+
+ 
+  .site .explanation {
+    font-family: "Prata", serif;
+  }
+
+  .footer_section .about span{
+    font-family: "Rubik Wet Paint", system-ui;
+  }
+
+  .footer_section .about {
+    position: relative;
+    width: 100%;
+    font-family: "Prata", serif;
+    font-size: 15px;
+  }
+
+  .about h6 {
+    position: relative;
+    font-size: 25px;
+
+  }
+
+  .footer_section .links {
+    font-family: "Prata", serif;
+    position: relative;
+    top: 1rem;
+    display: block;
+    bottom: 4.5rem;
+    font-size: 10px;
+  }
+
+  .footer_section .links h4 {
+    color: cadetblue;
+    text-decoration: underline;
+    font-size: 15px;
+  }
+
+  .footer_section .links a {
+    display: block;
+    color: black;
+  }
+
+  .contact_us {
+    position: relative;
+    bottom: 7rem;
+    left: 8rem;
+    font-family: "Prata", serif;
+    font-size: 15px;
+  }
+
+  .footer_section .follow_us {
+    position: relative;
+    bottom: -2rem;
+    left: 2rem;
+   
+  }
+
+
+  .follow_us i {
+    font-size: 30px;
+    margin: 1rem;
+  }
+
+  .follow_us .bxl-instagram-alt {
+    color: pink;
+  }
+
+  .follow_us .bxl-facebook-circle {
+    color: blue;
+  }
+
+  .follow_us .bxl-twitter {
+    color: aquamarine;
+  }
+
+  .follow_us .bxl-pinterest {
+    color: red;
+  }
+
+  .footer{
+    font-size: 13px;
+    font-family: "Prata", serif;
+    position: relative;
+    top: 1rem;
+    right: -0.5rem;
+  }
+
+
+  
+
+}
+
+/* Laptops screen */
+
+@media only screen and (min-width: 767px) {
+  body{
+    padding: 0;
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+  }
+  .slider {
+    height: 3rem;
+   }
+   
+   .slider ul{
+     display: flex;
+     animation: runSlider 15s linear infinite;
+     background-color: transparent;
+     position: relative;
+     left: 70rem;
+   }
+   .slider img{
+     height: 30px;
+     margin-right: 10px;
+   }
+   .slider li{
+     background-color: transparent;
+     width: 1000px;
+     display: flex;
+     justify-content: start;
+     align-items: center;
+     padding: 10px 0 10px 10px;
+     margin-right: 5px;
+     gap: 5rem;
+     
+   }
+   
+   .slider ul li div p  {
+        position: relative;
+        bottom: 1.5rem;
+        left: 2.5rem;
+   }
+   .slider{
+     overflow: hidden;
+   }
+   @keyframes runSlider{
+     from{
+         transform: translateX(0);
+     }to{
+         transform: translateX(calc(-165px * 7));
+     }
+   }
+   
+   
+  .navbar {
+    height: 10rem;
+  }
+
+  .navbar .navbar-brand {
+    font-size: 30px;
+  }
+
+  .navbar .nav-item .nav-link{
+    position: relative;
+    font-size: 20px;
+    left: -15rem;
+    top: 4rem;
+    margin: 5rem;
+  }
+
+  .dropdown .dropdown-menu {
+    margin-top: -1.25rem;
+    margin-left: -13.25rem;
+  }
+
+  .mySlides img {
+    position: relative;
+    right: 74rem;
+    width: 170rem;
+    height: 50rem;
+  }
+
+  .destination {
+    position: relative;
+    bottom: 1.5rem;
+    left:-2rem;
+    
+  }
+
+  .site {
+    columns: 500px;
+    position: relative;
+    width: 90%;
+    left: 8rem;
+  }
+
+  .explanation h5 {
+    font-size: 20px;
+  }
+
+  .hells_gate .explanation {
+    position: relative;
+    right: 77rem;
+    top: -1rem;
+    font-family: "Prata", serif;
+
+  }
+
+  .lake_nakuru .explanation {
+    position: relative;
+    right: 38rem;
+    top: -12rem;
+    width: 80%;
+    font-family: "Prata", serif;
+  }
+
+  .tsavo_east .explanation {
+    position: relative;
+    right: 38rem;
+    top: -5rem;
+    width: 95%;
+    font-family: "Prata", serif;
+  }
+
+  .site img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+
+  .footer_section::before {
+    content: '';
+    position: absolute;
+    width: 1830px;
+    height: 2px;
+    background-color:grey;
+    left: 6rem;
+    font-family: "Prata", serif;
+    
+  }
+
+  .footer_section .about span{
+    font-family: "Rubik Wet Paint", system-ui;
+  }
+
+  .footer_section .about {
+    position: relative;
+    left:6rem;
+    width: 25%;
+    font-family: "Prata", serif;
+    top: 10rem;
+    font-size: 20px;
+  }
+
+  .about h6 {
+    position: relative;
+    left: 10rem;
+    font-size: 30px;
+
+  }
+
+  .footer_section .links {
+    font-family: "Prata", serif;
+    position: relative;
+    left: 45rem;
+    display: block;
+    bottom: 4.5rem;
+    font-size: 20px;
+  }
+
+  .footer_section .links h4 {
+    color: cadetblue;
+    text-decoration: underline;
+    font-size: 30px;
+  }
+
+  .footer_section .links a {
+    display: block;
+    color: black;
+  }
+
+  .footer_section .follow_us {
+    position: relative;
+    left: 63rem;
+    bottom: 15rem;
+  }
+
+
+  .follow_us i {
+    font-size: 50px;
+    margin: 2rem;
+  }
+
+  .follow_us .bxl-instagram-alt {
+    color: pink;
+  }
+
+  .follow_us .bxl-facebook-circle {
+    color: blue;
+  }
+
+  .follow_us .bxl-twitter {
+    color: aquamarine;
+  }
+
+  .follow_us .bxl-pinterest {
+    color: red;
+  }
+
+  .footer_section .contact_us {
+    position: relative;
+    left: 100rem;
+    bottom: 20rem;
+  }
+
+  .contact_us p {
+    font-size: 20px;
+    font-family: "Prata", serif;
+  }
+
+  .footer_section .footer {
+    position: relative;
+    left: 40%;
+    font-family: "Prata", serif;
+    font-size: 20px;
+  }
+
+  
+
+
+
+}
